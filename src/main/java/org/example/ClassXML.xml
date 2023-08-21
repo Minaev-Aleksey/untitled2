@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persons>
+    <human>
+        <age>22</age>
+        <name>Cirilla</name>
+        <hobbies>Games</hobbies>
+    </human>
+    <human>
+        <age>23</age>
+        <name>Gerald</name>
+        <hobbies>Books</hobbies>
+    </human>
+    <human>
+        <age>22</age>
+        <name>Lutik</name>
+        <hobbies>Gitar</hobbies>
+    </human>
+    <human>
+        <age>22</age>
+        <name>Yenifer</name>
+        <hobbies>Magic</hobbies>
+    </human>
+</persons>
