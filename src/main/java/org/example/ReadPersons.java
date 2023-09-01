@@ -24,7 +24,7 @@ public class ReadPersons {
 //            que.getHumans().forEach(System.out::println);
 
             printHuman(que,23);
-            printAllHuman(que);
+            printAllHumans(que);
 
 //           System.out.println(que.getAge());
 //
@@ -44,7 +44,7 @@ public class ReadPersons {
     private static void printHuman(Persons que, int age) {
         que.getHumans().stream().filter(human -> human.getAge() == age).forEach(System.out::println);
     }
-    private static void printAllHuman(Persons que) {
+    private static void printAllHumans(Persons que) {
         que.getHumans().forEach(System.out::println);
     }
 }
