@@ -13,24 +13,23 @@ public class Main {
 
     static final String FILENAME = "D:\\Java-practik\\1.txt";
     static final String UNICODE_STRING = "Hello word!!!!";
+    static final Logger logger = Logger.getLogger(Main.class.getName());
+//    static final CharsetToolkit guesser = new CharsetToolkit();
+
 
     public static Charset guessCharset2(File file) throws IOException {
         return CharsetToolkit.guessEncoding(file, 4096, StandardCharsets.UTF_8);
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
 
-        try {
-            try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream((FILENAME), true), "UTF8"))) {
-                bw.write(UNICODE_STRING);
-                bw.flush();
-            }
+        try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream((FILENAME), true), "UTF8"))) {
+            bw.write(UNICODE_STRING);
+            bw.flush();
         } catch (UnsupportedEncodingException | FileNotFoundException ex) {
-            Logger.getLogger(Main.class.getName())
-                    .log(Level.SEVERE, null, ex);
+            logger.log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(Main.class.getName())
-                    .log(Level.SEVERE, null, ex);
+            logger.log(Level.SEVERE, null, ex);
         }
 
         File file = new File("D:\\Java-practik\\1.txt");
