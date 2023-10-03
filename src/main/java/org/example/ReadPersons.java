@@ -3,14 +3,12 @@
 package org.example;
 
 import java.io.File;
-import java.sql.Driver;
 import java.sql.SQLException;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
 public class ReadPersons {
-
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
@@ -24,9 +22,6 @@ public class ReadPersons {
         } catch (JAXBException e) {
             throw new RuntimeException(e);
         }
-
-        Class <Driver> driverCkass = Driver.class;
-
     }
 
     private static void printHuman(Persons que, int age) {

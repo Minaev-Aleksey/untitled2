@@ -19,5 +19,4 @@ public class ConnectionManager {
             throw new RuntimeException(e);
         }
     }
-
 }
