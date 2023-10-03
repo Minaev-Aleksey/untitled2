@@ -15,9 +15,9 @@ public class SQLConnect {
 
         try (Connection connection = ConnectionManager.open();
              Statement statement = connection.createStatement()) {
-            System.out.println(connection.getTransactionIsolation());
-            Boolean executeResult = statement.execute(sql);
-            System.out.println(executeResult);
+//            System.out.println(connection.getTransactionIsolation());
+//            Boolean executeResult = statement.execute(sql);
+//            System.out.println(executeResult);
             System.out.println("==============================================");
 //            //Выводит хобби
 //            ResultSet resultSet = statement.executeQuery("SELECT * FROM hobbies");
