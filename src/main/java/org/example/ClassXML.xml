@@ -18,6 +18,9 @@
     <human>
         <age>22</age>
         <name>Yenifer</name>
-        <hobbies>Magic</hobbies>
+        <hobbies>
+            <hobby>Magic</hobby>
+            <hobby>Dance</hobby>
+        </hobbies>
     </human>
 </persons>
