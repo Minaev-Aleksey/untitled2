@@ -8,10 +8,10 @@ import java.sql.Statement;
 public class SQLConnect {
     public static void main(String[] args) throws SQLException {
 
-        //        Для добавления в таблицу данных
-        String sql = """
-
-                """;
+//        Для добавления в таблицу данных
+//        String sql = """
+//
+//                """;
 
         try (Connection connection = ConnectionManager.open();
              Statement statement = connection.createStatement()) {
